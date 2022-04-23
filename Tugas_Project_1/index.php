@@ -31,7 +31,7 @@ include('layout/sidebar.php');
         <!-- Default box -->
         <div class="card">
             <div class="card-header">
-                <h3 class="card-title">Assalamualaikum</h3>
+                <h3 class="card-title">Selamat Datang</h3>
 
                 <div class="card-tools">
                     <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
@@ -60,7 +60,7 @@ include('layout/sidebar.php');
             </div>
             <!-- /.card-body -->
             <div class="card-footer">
-                Try To Be Better
+
             </div>
             <!-- /.card-footer-->
         </div>

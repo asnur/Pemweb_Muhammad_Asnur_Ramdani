@@ -47,64 +47,7 @@ $saldo = $_POST['saldo'] ?? '';
 
 <body>
 
-    <div class="container-fluid">
 
-        <header class="p-3 mb-3 border-bottom mt-3 bg-light">
-            <div class="container">
-                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                    <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
-                        <!-- <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
-                        <use xlink:href="#bootstrap"></use>
-                    </svg> -->
-                        <h2 class="h5">Bank</h2>
-                    </a>
-
-                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                        <li>
-                            <div class="dropdown">
-                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Review PHP
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="javascript:void(0)">Test1</a></li>
-                                    <li><a class="dropdown-item" href="javascript:void(0)">Test2</a></li>
-                                    <li><a class="dropdown-item" href="javascript:void(0)">Test3</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="dropdown">
-                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                    PHP 5 OOP
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="javascript:void(0)">Test1</a></li>
-                                    <li><a class="dropdown-item" href="javascript:void(0)">Test2</a></li>
-                                    <li><a class="dropdown-item" href="javascript:void(0)">Test3</a></li>
-                                </ul>
-                            </div>
-                        </li>
-
-
-                        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-                            <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
-                        </form>
-                        <button style="background-color: white; border: 1px solid gray;" type="submit" class="btn">Submit</button>
-                    </ul>
-
-
-                    <div class="dropdown text-end">
-                        <button class="btn" type="button">
-                            Login
-                        </button>
-                    </div>
-
-                </div>
-            </div>
-
-
-    </div>
-    </header>
 
 
 
@@ -198,16 +141,6 @@ $saldo = $_POST['saldo'] ?? '';
         <hr>
 
     </div>
-
-
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top bg-light fix-bottom">
-        <div class="container-fluid">
-            <h5 style="font-size: 20px;">Lab Pemprograman Web Lanjutan</h5>
-            <span style="font-size: 15px;">Dosen: Sirojul Munir S.Si,M.Kom</span>
-            <br>
-            <span style="font-size: 15px;">STT-NF - Kampus B</span>
-        </div>
-    </footer>
 
 
     <!-- JavaScript Bundle with Popper -->

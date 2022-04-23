@@ -54,7 +54,7 @@
                       </a>
                       <ul class="nav nav-treeview">
                           <li class="nav-item">
-                              <a href=".././Pratikum_1/Pratikum_Array.php" target="blank" class="nav-link">
+                              <a href="../praktikum_1/index.php" target="blank" class="nav-link">
                                   <i class="far fa-circle nav-icon"></i>
                                   <p>Pratikum 1</p>
                               </a>
@@ -70,19 +70,19 @@
                               </a>
                               <ul class="nav nav-treeview" style="display: none;">
                                   <li class="nav-item">
-                                      <a href=".././Pratikum_2/Pratikum_Form_Get.php" target="blank" class="nav-link">
+                                      <a href="../praktikum_2/form_get.php" target="blank" class="nav-link">
                                           <i class="far fa-circle nav-icon"></i>
                                           <p>Form Get</p>
                                       </a>
                                   </li>
                                   <li class="nav-item">
-                                      <a href=".././Pratikum_2/Pratikum_Form_Logika.php" target="blank" class="nav-link">
+                                      <a href="../praktikum_2/control_logika.php" target="blank" class="nav-link">
                                           <i class="far fa-circle nav-icon"></i>
-                                          <p>Form Logika</p>
+                                          <p>Kontrol Logika</p>
                                       </a>
                                   </li>
                                   <li class="nav-item">
-                                      <a href=".././Pratikum_2/Pratikum_Form_Post.php" target="blank" class="nav-link">
+                                      <a href="../praktikum_2/form_post.php" target="blank" class="nav-link">
                                           <i class="far fa-circle nav-icon"></i>
                                           <p>Form Post</p>
                                       </a>
@@ -92,11 +92,36 @@
                           </li>
 
                           <li class="nav-item">
-                              <a href=".././Pratikum_3/home.php" target="blank" class="nav-link">
+                              <a href="javascript:void(0)" class="nav-link">
                                   <i class="far fa-circle nav-icon"></i>
-                                  <p>Pratikum 3</p>
+                                  <p>
+                                      <p>Pratikum 3</p>
+                                      <i class="fas fa-angle-left right"></i>
+                                  </p>
                               </a>
+                              <ul class="nav nav-treeview" style="display: none;">
+                                  <li class="nav-item">
+                                      <a href="../praktikum_3/form_get.php" target="blank" class="nav-link">
+                                          <i class="far fa-circle nav-icon"></i>
+                                          <p>Form Get</p>
+                                      </a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a href="../praktikum_3/control_logika.php" target="blank" class="nav-link">
+                                          <i class="far fa-circle nav-icon"></i>
+                                          <p>Kontrol Logika</p>
+                                      </a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a href="../praktikum_3/form_post.php" target="blank" class="nav-link">
+                                          <i class="far fa-circle nav-icon"></i>
+                                          <p>Form Post</p>
+                                      </a>
+                                  </li>
+
+                              </ul>
                           </li>
+
 
                           <li class="nav-item">
                               <a href="javascript:void(0)" class="nav-link">
@@ -108,26 +133,26 @@
                               </a>
                               <ul class="nav nav-treeview" style="display: none;">
                                   <li class="nav-item">
-                                      <a href=".././Pratikum_4/Pratikum1.1/data_lingkaran.php" target="blank" class="nav-link">
+                                      <a href="../praktikum_4/praktikum 1.1/data_lingkaran.php" target="blank" class="nav-link">
                                           <i class="far fa-circle nav-icon"></i>
                                           <p>Lingkaran</p>
                                       </a>
                                   </li>
                                   <li class="nav-item">
-                                      <a href=".././Pratikum_4/Pratikum1.2/data_persegi_panjang.php" target="blank" class="nav-link">
+                                      <a href="../praktikum_4/praktikum 1.2/data_persegi_panjang.php" target="blank" class="nav-link">
                                           <i class="far fa-circle nav-icon"></i>
-                                          <p>Persegi</p>
+                                          <p>Persegi Panjang</p>
                                       </a>
                                   </li>
                                   <li class="nav-item">
-                                      <a href=".././Pratikum_4/Pratikum1.3/daftar_mahasiswa.php" target="blank" class="nav-link">
+                                      <a href="../praktikum_4/praktikum 1.3/daftar_mahasiswa.php" target="blank" class="nav-link">
                                           <i class="far fa-circle nav-icon"></i>
                                           <p>Daftar Mahasiswa</p>
                                       </a>
                                   </li>
 
                                   <li class="nav-item">
-                                      <a href=".././Pratikum_4/Pratikum1.4/class_nilaimahasiswa.php" target="blank" class="nav-link">
+                                      <a href="../praktikum_4/praktikum 1.4/nilaimahasiswa.php" target="blank" class="nav-link">
                                           <i class="far fa-circle nav-icon"></i>
                                           <p>Nilai Mahasiswa</p>
                                       </a>
@@ -137,7 +162,7 @@
                           </li>
 
                           <li class="nav-item">
-                              <a href=".././Pratikum_5/BankWithTable.php" target="blank" class="nav-link">
+                              <a href="../praktikum_5/praktikum 2.2/class_bank.php" target="blank" class="nav-link">
                                   <i class="far fa-circle nav-icon"></i>
                                   <p>Pratikum 5</p>
                               </a>
