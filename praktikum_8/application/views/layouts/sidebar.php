@@ -39,24 +39,6 @@
                     <a href="<?= base_url() ?>index.php/mahasiswa" class="nav-link">
                         <i class="nav-icon fas fa-user"></i>
                         <p>
-                            Profile
-                            <span class="right badge badge-danger">New</span>
-                        </p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="<?= base_url() ?>index.php/mahasiswa" class="nav-link">
-                        <i class="nav-icon fas fa-user"></i>
-                        <p>
-                            Profile
-                            <span class="right badge badge-danger">New</span>
-                        </p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="<?= base_url() ?>index.php/mahasiswa" class="nav-link">
-                        <i class="nav-icon fas fa-user"></i>
-                        <p>
                             Mahasiswa
                             <span class="right badge badge-danger">New</span>
                         </p>
