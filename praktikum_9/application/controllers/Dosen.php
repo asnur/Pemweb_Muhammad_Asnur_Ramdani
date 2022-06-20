@@ -5,6 +5,10 @@ class Dosen extends CI_Controller
 {
     public function index()
     {
+        if (!$this->session->has_userdata('username')) {
+            redirect(base_url() . 'index.php/login', 'refresh');
+            return;
+        }
         $this->load->model('dosen_model', 'dsn');
         $all_dosen = $this->dsn->getAllData();
 
@@ -17,6 +21,10 @@ class Dosen extends CI_Controller
     }
     public function view()
     {
+        if (!$this->session->has_userdata('username')) {
+            redirect(base_url() . 'index.php/login', 'refresh');
+            return;
+        }
         $nidn = $this->input->get('id');
 
         $this->load->model('dosen_model', 'dsn');
@@ -32,6 +40,10 @@ class Dosen extends CI_Controller
     }
     public function create()
     {
+        if (!$this->session->has_userdata('username')) {
+            redirect(base_url() . 'index.php/login', 'refresh');
+            return;
+        }
         $data['judul'] = 'Form Input dosen';
 
         $this->load->view('layouts/header');
@@ -42,6 +54,10 @@ class Dosen extends CI_Controller
     }
     public function update()
     {
+        if (!$this->session->has_userdata('username')) {
+            redirect(base_url() . 'index.php/login', 'refresh');
+            return;
+        }
         $nidn = $this->input->get('id');
         $data['judul'] = 'Form Edit dosen';
 
@@ -57,6 +73,10 @@ class Dosen extends CI_Controller
     }
     public function delete()
     {
+        if (!$this->session->has_userdata('username')) {
+            redirect(base_url() . 'index.php/login', 'refresh');
+            return;
+        }
         $nidn = $this->input->get('id');
 
         $this->load->model('dosen_model', 'dsn');
@@ -67,6 +87,10 @@ class Dosen extends CI_Controller
     }
     public function save()
     {
+        if (!$this->session->has_userdata('username')) {
+            redirect(base_url() . 'index.php/login', 'refresh');
+            return;
+        }
         $this->load->model('dosen_model', 'dsn');
 
         $nidn = $this->input->post('nidn');

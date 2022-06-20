@@ -5,6 +5,10 @@ class Mahasiswa extends CI_Controller
 {
     public function index()
     {
+        if (!$this->session->has_userdata('username')) {
+            redirect(base_url() . 'index.php/login', 'refresh');
+            return;
+        }
         $this->load->model('mahasiswa_model', 'mhs');
         $list_mahasiswa = $this->mhs->getAllData();
 
@@ -18,6 +22,10 @@ class Mahasiswa extends CI_Controller
     }
     public function view()
     {
+        if (!$this->session->has_userdata('username')) {
+            redirect(base_url() . 'index.php/login', 'refresh');
+            return;
+        }
         $nim = $this->input->get('id');
 
         $this->load->model('mahasiswa_model', 'mhs');
@@ -33,6 +41,10 @@ class Mahasiswa extends CI_Controller
     }
     public function create()
     {
+        if (!$this->session->has_userdata('username')) {
+            redirect(base_url() . 'index.php/login', 'refresh');
+            return;
+        }
         $data['judul'] = 'Form Input Mahasiswa';
 
         $this->load->view('layouts/header');
@@ -43,6 +55,10 @@ class Mahasiswa extends CI_Controller
     }
     public function update()
     {
+        if (!$this->session->has_userdata('username')) {
+            redirect(base_url() . 'index.php/login', 'refresh');
+            return;
+        }
         $nim = $this->input->get('id');
         $data['judul'] = 'Form Edit Mahasiswa';
 
@@ -58,6 +74,10 @@ class Mahasiswa extends CI_Controller
     }
     public function delete()
     {
+        if (!$this->session->has_userdata('username')) {
+            redirect(base_url() . 'index.php/login', 'refresh');
+            return;
+        }
         $nim = $this->input->get('id');
 
         $this->load->model('mahasiswa_model', 'mhs');
@@ -68,6 +88,10 @@ class Mahasiswa extends CI_Controller
     }
     public function save()
     {
+        if (!$this->session->has_userdata('username')) {
+            redirect(base_url() . 'index.php/login', 'refresh');
+            return;
+        }
         $this->load->model('mahasiswa_model', 'mhs');
 
         $_nim = $this->input->post('nim');
@@ -103,7 +127,7 @@ class Mahasiswa extends CI_Controller
         }
 
 
-        redirect(base_url() . 'mahasiswa/view?id=' . $_nim, 'refresh');
+        redirect(base_url() . 'index.php/mahasiswa/view?id=' . $_nim, 'refresh');
         return;
     }
 }

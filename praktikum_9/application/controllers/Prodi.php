@@ -5,6 +5,10 @@ class Prodi extends CI_Controller
 {
     public function index()
     {
+        if (!$this->session->has_userdata('username')) {
+            redirect(base_url() . 'index.php/login', 'refresh');
+            return;
+        }
         $this->load->model('prodi_model', 'prodi');
         $list_prodi = $this->prodi->getAllData();
 
@@ -17,6 +21,10 @@ class Prodi extends CI_Controller
     }
     public function view()
     {
+        if (!$this->session->has_userdata('username')) {
+            redirect(base_url() . 'index.php/login', 'refresh');
+            return;
+        }
         $kode = $this->input->get('id');
 
         $this->load->model('prodi_model', 'prodi');
@@ -32,6 +40,10 @@ class Prodi extends CI_Controller
     }
     public function create()
     {
+        if (!$this->session->has_userdata('username')) {
+            redirect(base_url() . 'index.php/login', 'refresh');
+            return;
+        }
         $data['judul'] = 'Form Input prodi';
 
         $this->load->view('layouts/header');
@@ -42,6 +54,10 @@ class Prodi extends CI_Controller
     }
     public function update()
     {
+        if (!$this->session->has_userdata('username')) {
+            redirect(base_url() . 'index.php/login', 'refresh');
+            return;
+        }
         $kode = $this->input->get('id');
         $data['judul'] = 'Form Edit prodi';
 
@@ -57,6 +73,10 @@ class Prodi extends CI_Controller
     }
     public function delete()
     {
+        if (!$this->session->has_userdata('username')) {
+            redirect(base_url() . 'index.php/login', 'refresh');
+            return;
+        }
         $kode = $this->input->get('id');
 
         $this->load->model('prodi_model', 'prodi');
@@ -67,6 +87,10 @@ class Prodi extends CI_Controller
     }
     public function save()
     {
+        if (!$this->session->has_userdata('username')) {
+            redirect(base_url() . 'index.php/login', 'refresh');
+            return;
+        }
         $this->load->model('prodi_model', 'prodi');
 
         $_kode = $this->input->post('kode');
@@ -90,7 +114,7 @@ class Prodi extends CI_Controller
         }
 
 
-        redirect(base_url() . 'prodi/view?id=' . $_kode, 'refresh');
+        redirect(base_url() . 'index.php/prodi/view?id=' . $_kode, 'refresh');
         return;
     }
 }
