@@ -26,7 +26,7 @@
             <div class="card-body login-card-body">
                 <p class="login-box-msg">Sign in to start your session</p>
 
-                <?php echo form_open('login/auth') ?>
+                <?php echo form_open('auth/auth') ?>
                 <div class="input-group mb-3">
                     <input type="username" name="username" class="form-control" placeholder="Username">
                     <div class="input-group-append">

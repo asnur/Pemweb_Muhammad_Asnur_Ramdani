@@ -90,7 +90,7 @@ class Prodi extends CI_Controller
         }
 
 
-        redirect(base_url() . 'prodi/view?id=' . $_kode, 'refresh');
+        redirect(base_url() . 'index.php/prodi/view?id=' . $_kode, 'refresh');
         return;
     }
 }

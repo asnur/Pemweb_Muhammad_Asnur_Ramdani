@@ -103,7 +103,7 @@ class Mahasiswa extends CI_Controller
         }
 
 
-        redirect(base_url() . 'mahasiswa/view?id=' . $_nim, 'refresh');
+        redirect(base_url() . 'index.php/mahasiswa/view?id=' . $_nim, 'refresh');
         return;
     }
 }

@@ -145,9 +145,6 @@
                         <i class="fas fa-th-large"></i>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a href="<?= base_url() ?>login/logout" class="btn btn-danger" type="button">Logout</a>
-                </li>
             </ul>
         </nav>
         <!-- /.navbar -->

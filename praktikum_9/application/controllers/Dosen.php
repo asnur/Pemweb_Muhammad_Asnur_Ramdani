@@ -6,7 +6,7 @@ class Dosen extends CI_Controller
     public function index()
     {
         if (!$this->session->has_userdata('username')) {
-            redirect(base_url() . 'index.php/login', 'refresh');
+            redirect(base_url() . 'index.php/auth', 'refresh');
             return;
         }
         $this->load->model('dosen_model', 'dsn');
@@ -22,7 +22,7 @@ class Dosen extends CI_Controller
     public function view()
     {
         if (!$this->session->has_userdata('username')) {
-            redirect(base_url() . 'index.php/login', 'refresh');
+            redirect(base_url() . 'index.php/auth', 'refresh');
             return;
         }
         $nidn = $this->input->get('id');
@@ -41,7 +41,7 @@ class Dosen extends CI_Controller
     public function create()
     {
         if (!$this->session->has_userdata('username')) {
-            redirect(base_url() . 'index.php/login', 'refresh');
+            redirect(base_url() . 'index.php/auth', 'refresh');
             return;
         }
         $data['judul'] = 'Form Input dosen';
@@ -55,7 +55,7 @@ class Dosen extends CI_Controller
     public function update()
     {
         if (!$this->session->has_userdata('username')) {
-            redirect(base_url() . 'index.php/login', 'refresh');
+            redirect(base_url() . 'index.php/auth', 'refresh');
             return;
         }
         $nidn = $this->input->get('id');
@@ -74,7 +74,7 @@ class Dosen extends CI_Controller
     public function delete()
     {
         if (!$this->session->has_userdata('username')) {
-            redirect(base_url() . 'index.php/login', 'refresh');
+            redirect(base_url() . 'index.php/auth', 'refresh');
             return;
         }
         $nidn = $this->input->get('id');
@@ -88,7 +88,7 @@ class Dosen extends CI_Controller
     public function save()
     {
         if (!$this->session->has_userdata('username')) {
-            redirect(base_url() . 'index.php/login', 'refresh');
+            redirect(base_url() . 'index.php/auth', 'refresh');
             return;
         }
         $this->load->model('dosen_model', 'dsn');
